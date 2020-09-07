@@ -1,0 +1,18 @@
+title: Portfolio
+description: >-
+  Shofia Dewi's Portfolio is a simple way design of her journey. Will take more
+  impossibility to possibility, long life learner.
+template:
+  repo: portfolio-template
+  name: portfolio
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
